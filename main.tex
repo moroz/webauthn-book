@@ -4,15 +4,26 @@
 \title{Implementing WebAuthn in Go}
 \author{Karol Moroz}
 \setmainfont[Mapping=tex-text]{Adobe Text Pro}
-\setmonofont{Consolas NF}
+\setmonofont[Scale=0.92]{Consolas NF}
 \usepackage{minted}
 \usemintedstyle{vs}
 \begin{document}
+\frenchspacing
 \maketitle
-\chapter{Setting up}
+\chapter{Initial setup}
 
-\begin{minted}{text}
-$ mkdir -p project
+Create a directory for the new project.
+
+\begin{minted}{shell}
+$ mkdir -p tomodachi
+\end{minted}
+
+In the newly created directory, initialize a Go module. In this example, I am using \texttt{moroz} as the Github username, but you should likely replace it with yours.
+
+\begin{minted}{shell}
+$ cd tomodachi
+$ go mod init github.com/moroz/tomodachi
+go: creating new go.mod: module github.com/moroz/tomodachi
 \end{minted}
 
 \inputminted[tabsize=4]{go}{code/01-setting-up/01-main.go}
