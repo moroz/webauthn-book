@@ -1,0 +1,21 @@
+\documentclass[b5paper,12pt]{book}
+\usepackage{fontspec}
+\usepackage{geometry}
+\title{Implementing WebAuthn in Go}
+\author{Karol Moroz}
+\setmainfont[Mapping=tex-text]{Adobe Text Pro}
+\setmonofont{Consolas NF}
+\usepackage{minted}
+\usemintedstyle{vs}
+\begin{document}
+\maketitle
+\chapter{Setting up}
+
+\begin{minted}{text}
+$ mkdir -p project
+\end{minted}
+
+\inputminted[tabsize=4]{go}{code/01-setting-up/01-main.go}
+
+\chapter{Password authentication}
+\end{document}

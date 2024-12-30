@@ -1,0 +1,5 @@
+*.log
+*.aux
+*.pygtex
+_minted-main
+main.pdf
